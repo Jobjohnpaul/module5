@@ -1,0 +1,281 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    color: #fff;
+    background-color: maroon;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header-nav{
+    background-color:#ffa500;
+    border: 0;
+    border-radius: 0;
+}
+#logo{
+    background: url('picture/images\ \(10\).jpeg') no-repeat;
+    width:100px;
+    height: 100px;
+    margin: 5px 10px 10px;
+}
+#brand{
+    margin: 0 10px 10px;
+    padding: 0;
+    line-height: .2;
+}
+#brand>div h1{/********petrous resturant**********************/
+    text-transform: uppercase;
+    color: #006400;
+    text-shadow: 2px 2px 2px #800000;
+    font-size: 2em;
+    font-weight: 700;
+}
+#brand span{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 500;
+
+}
+/*button***********************************************/
+#button-nav div{
+   color: #800000;
+   clear: both;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .8em;
+}
+#button-nav span{
+    font-size: 1em;
+    
+} 
+#navheader button.navbar-toggle, button.navbar-toggle .icon-bar{
+    border: 1px solid #800000;
+}
+#header-nav .navbar-nav #my-number a{
+    color: #006400;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+/*header ended*****************************************/
+
+#jumbo.jumbotron{
+    box-shadow: 0 0 20px #fff;
+    border: 1px solid #800000;
+}
+
+/*************three part of the main page***********************/
+
+  #main, #specials, #map{
+   
+    height: 200px;
+    width: 100%;
+    border: 1px solid #ffa500;
+    overflow: hidden;
+    position: relative;
+    margin:  15px auto;
+    
+
+}
+#main{
+    background: url('picture/ewa250.jpg') no-repeat;
+    background-position: center;
+}
+#specials{
+    background: url('picture/images\ \(200\).jpeg') no-repeat;
+    background-position: center;
+}
+#main:hover, #specials:hover, #map:hover{
+    box-shadow:   0px 0px 5px 1px #fff;
+}
+#main span, #specials span, #map span{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffa500;
+    opacity: .5;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    color: #800000;
+    font-weight: 600;
+    text-shadow: 0 2px 2px #fff;
+} 
+/**************** FOOTER*********************/
+#the-footer{
+    background-color: #222;
+    border: 0;
+    width: 100%;
+   
+}
+.container{
+    margin-top: 35px ;
+    padding:35px  ;
+}
+hr{
+    width: 50%;
+}
+#the-time p, #the-address {
+    text-transform: capitalize;
+    line-height: 1.6;
+}
+#the-time p span {
+    font-size: 1.6em;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+#the-address p span:nth-child(1){
+    font-size: 1.5em;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+ #the-address #delivery{
+    font-style: italic;
+    line-height: 3;
+    font-size: .8em;
+    color:aquamarine ;
+}
+#the-testimony{
+    font-style: italic;
+    margin-bottom: 20px;
+
+}
+#the-footer #copy-right{
+   font-style: italic;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   text-align: center;
+}
+/* footer for the main main page ended here****************************** */
+/* second page main body starts here**************************** */
+
+#h3 p{
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: .9em;
+}
+#h3 h3{
+    text-transform:uppercase ;
+    padding-bottom: 30px;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+#main-id{
+        width: 100%;
+        height: 250px;
+        border: 1px solid #222;
+       position: relative;
+       margin: 15px auto 15px auto ;
+       overflow: hidden;
+       /* background-position:center; */
+      
+
+}
+#main-id img{
+    width: 100%;
+    height: 100%;
+}
+#main-id:hover{
+    box-shadow: 0 0 5px 2px #ffa500;
+}
+#main-id a:active, #main-id a:hover{
+    text-decoration: none;
+}
+ #span1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5%;
+    background-color: #222;
+    opacity: .5;
+    border-radius: 5px;
+    text-transform: capitalize;
+    color: #fff; 
+    font-weight: 600;
+}
+#span2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    opacity: .5;
+    border-radius: 5px;
+    text-transform: capitalize;
+    color: #c5f40b; 
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+
+/*************** MEDIA QUARY****************************************************/
+/******LARGE SCREEN*****************/
+@media (min-width:1200px){
+   
+       #jumbo{
+        background: url('picture/jumbotron-1200.jpeg') no-repeat;
+        height: 674px;
+      
+       }
+
+    
+}
+
+/********MEDIUM SCREEN**************/
+@media (min-width:992px) and (max-width:1199px){
+    #jumbo.jumbotron{
+        background: url('picture/jumbotron-992.jpg') no-repeat;
+        height: 500px;
+    }
+}
+
+/**********SMALL SCREEN**********/
+@media  (max-width:768px){
+    #jumbo.jumbotron{
+        background: url('picture/jumbotron-768.jpg') no-repeat;
+        height: 450px;
+    }
+    .col-xxs-12{
+        width:100%;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+
+    }
+    #the-footer{
+        text-align: center;
+    }
+}
+
+/**************extra small screen****/
+@media (min-width:420px) and (max-width:767px){
+    #jumbo.jumbotron{
+        padding: 0;
+       margin-top: 35px;
+    }
+
+    #brand {
+        height: 70%;
+        margin-top: 10px;
+      }
+      #brand div h1{
+          font-size: 5vw;
+      }
+
+      .col-smm-6{
+        width: 50%;
+      }
+}
+
+
+
+
+
